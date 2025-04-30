@@ -1,7 +1,6 @@
 import Image from "next/image";
 import React from "react";
 import Dropdown from "@/components/Dropdown";
-import Link from "next/link";
 
 export default function HomePage() {
   return (
@@ -21,34 +20,30 @@ export default function HomePage() {
           </h1>
         </div>
         <div className="flex gap-[74px] pt-[20px] pl-[600px]">
-          <Link
-            href="/"
-            className="text-[15px] font-bold flex items-center gap-1 text-[#1F581A]"
+          <a
+            className="text-[15px] font-bold text-[#35732F] flex items-center gap-1"
+            href=""
           >
-            <span className="text-[15px] font-bold flex items-center gap-1">
-              Beranda
-              <i className="fa-solid fa-chevron-down text-[12px] mt-[2px]" />
-            </span>
-          </Link>
+            Beranda{" "}
+            <i className="fa-solid fa-chevron-down text-[12px] mt-[2px]" />
+          </a>
 
-          <Link
+          <a
             className="text-[15px] font-normal text-[#263c72] flex items-center gap-1"
             href=""
           >
-            <span className="text-[15px] flex items-center gap-1">
-              Profile
-              <i className="fa-solid fa-chevron-down text-[12px] mt-[2px]" />
-            </span>
-          </Link>
+            Profil{" "}
+            <i className="fa-solid fa-chevron-down text-[12px] mt-[2px]" />
+          </a>
 
           <Dropdown
             title="Akademik"
             items={[
-              { label: "Visi dan Misi", href: "/visi" },
-              { label: "Struktur Organisasi", href: "/strukturOrganisasi" },
-              { label: "Sejarah", href: "/sejarah" },
-              { label: "Kurikulum", href: "/kurikulum" },
-              { label: "Penerimaan Siswa Baru", href: "/psiswabaru" },
+              { label: "Visi dan Misi", href: "#" },
+              { label: "Struktur Organisasi", href: "#" },
+              { label: "Sejarah", href: "#" },
+              { label: "Kurikulum", href: "#" },
+              { label: "Penerimaan Siswa Baru", href: "#" },
             ]}
           />
 
@@ -84,7 +79,7 @@ export default function HomePage() {
 
       <div className="p-[120px]">
         <div className="flex justify-center gap-[90px]">
-          <Link
+          <a
             href="https://instagram.com"
             target="_blank"
             rel="noopener noreferrer"
@@ -95,9 +90,9 @@ export default function HomePage() {
                 Komunitas &gt;
               </p>
             </div>
-          </Link>
+          </a>
 
-          <Link
+          <a
             href="https://instagram.com"
             target="_blank"
             rel="noopener noreferrer"
@@ -108,9 +103,9 @@ export default function HomePage() {
                 Akademik &gt;
               </p>
             </div>
-          </Link>
+          </a>
 
-          <Link
+          <a
             href="https://instagram.com"
             target="_blank"
             rel="noopener noreferrer"
@@ -121,7 +116,7 @@ export default function HomePage() {
                 Tentang Kami &gt;
               </p>
             </div>
-          </Link>
+          </a>
         </div>
       </div>
 
@@ -169,9 +164,9 @@ export default function HomePage() {
             Berita Terkini <br />
             Terkait Yayasan
           </h4>
-          <Link className="text-[#1F581A] text-[15px] mt-2" href="">
+          <a className="text-[#1F581A] text-[15px] mt-2" href="">
             selengkapnya &gt;
-          </Link>
+          </a>
         </div>
 
         <div className="flex-col bg-[#EEEFF3] w-[267px] h-[210px] flex items-start justify-center px-9">
@@ -179,9 +174,9 @@ export default function HomePage() {
             penerimaan Siswa <br />
             Baru 2015
           </h4>
-          <Link className="text-[#1F581A] text-[15px] mt-2" href="">
+          <a className="text-[#1F581A] text-[15px] mt-2" href="">
             selengkapnya &gt;
-          </Link>
+          </a>
         </div>
 
         <div className="flex-col bg-[#EEEFF3] w-[267px] h-[210px] flex items-start justify-center px-9">
@@ -189,9 +184,9 @@ export default function HomePage() {
             Ramadhan <br />
             Festival
           </h4>
-          <Link className="text-[#1F581A] text-[15px] mt-2" href="">
+          <a className="text-[#1F581A] text-[15px] mt-2" href="">
             selengkapnya &gt;
-          </Link>
+          </a>
         </div>
 
         <div className="flex-col bg-[#EEEFF3] w-[267px] h-[210px] flex items-start justify-center px-9">
@@ -199,9 +194,9 @@ export default function HomePage() {
             Acara Pengajian <br />
             Bulanan
           </h4>
-          <Link className="text-[#1F581A] text-[15px] mt-2" href="">
+          <a className="text-[#1F581A] text-[15px] mt-2" href="">
             selengkapnya &gt;
-          </Link>
+          </a>
         </div>
       </div>
 
