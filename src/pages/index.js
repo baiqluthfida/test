@@ -90,8 +90,8 @@ export default function HomePage() {
             rel="noopener noreferrer"
           >
             <div className="">
-              <img src="/bangku.png" alt="akademik" width={251} height={191} />
-              <p className="text-[#35732F] font-bold text-[20px] font-sans pt-1">
+              <img src="/upacara.png" alt="akademik" width={251} height={191} />
+              <p className="text-[#35732F] font-bold text-[20px] font-sans pt-1 ">
                 Komunitas &gt;
               </p>
             </div>
@@ -116,7 +116,12 @@ export default function HomePage() {
             rel="noopener noreferrer"
           >
             <div className="">
-              <img src="/bangku.png" alt="akademik" width={251} height={191} />
+              <img
+                src="/bagibagi.jpg"
+                alt="akademik"
+                width={251}
+                height={191}
+              />
               <p className="text-[#35732F] font-bold text-[20px] font-sans pt-1">
                 Tentang Kami &gt;
               </p>
@@ -127,7 +132,7 @@ export default function HomePage() {
 
       <div className="flex gap-[70px] pb-[100px]">
         <div>
-          <img src="/bangku.png" alt="bangku" width={652} height={495} />
+          <img src="/guru.png" alt="bangku" width={652} height={495} />
         </div>
 
         <div className="pt-9">
@@ -189,7 +194,7 @@ export default function HomePage() {
             Ramadhan <br />
             Festival
           </h4>
-          <Link className="text-[#1F581A] text-[15px] mt-2" href="">
+          <Link className="text-[#1F581A] text-[15px] mt-2" href="/ramadhan">
             selengkapnya &gt;
           </Link>
         </div>
