@@ -6,62 +6,53 @@ import Link from "next/link";
 export default function strukturOrganisasi() {
   return (
     <div>
-      <nav className=" flex pl-3 pr-[60px] bg-[#ffffff]">
-        <Image
-          className=" w-[59px] h-[52px] m-[10px]"
-          src="/logoYayasan.png"
-          alt="logo"
-          width={1500}
-          height={200}
-        />
-        <div className="flex gap-[30px] pl-[15px]">
-          <h1 className="pt-[12px] font-bold">
-            YAYASAN RIADHUL ULUM
-            <br /> AMPENAN
-          </h1>
-        </div>
-        <div className="flex gap-[74px] pt-[20px] pl-[600px]">
-          <Link
-            href="/"
-            className="text-[15px] font-bold flex items-center gap-1 text-[#1F581A]"
-          >
-            <span className="text-[15px] font-bold flex items-center gap-1">
-              Beranda
-              <i className="fa-solid fa-chevron-down text-[12px] mt-[2px]" />
-            </span>
-          </Link>
-
-          <Link
-            className="text-[15px] font-normal text-[#263c72] flex items-center gap-1"
-            href=""
-          >
-            <span className="text-[15px] flex items-center gap-1">
-              Profile
-              <i className="fa-solid fa-chevron-down text-[12px] mt-[2px]" />
-            </span>
-          </Link>
-
-          <Dropdown
-            title="Akademik"
-            items={[
-              { label: "Visi dan Misi", href: "/visi" },
-              { label: "Struktur Organisasi", href: "/strukturOrganisasi" },
-              { label: "Sejarah", href: "/sejarah" },
-              { label: "Kurikulum", href: "/kurikulum" },
-              { label: "Penerimaan Siswa Baru", href: "/psiswabaru" },
-            ]}
-          />
-
-          <Dropdown
-            title="Layanan"
-            items={[
-              { label: "Taman Kanak-Kanak", href: "#" },
-              { label: "Madrasah Ibtidaiyah", href: "#" },
-              { label: "Madrasah Tsanawiyah", href: "#" },
-            ]}
-          />
-        </div>
-      </nav>
+     {/* Header (tidak diubah) */}
+          <nav className=" flex pl-3 pr-[60px] bg-[#ffffff]">
+            <Image
+              className=" w-[59px] h-[52px] m-[10px]"
+              src="/logoYayasan.png"
+              alt="logo"
+              width={1500}
+              height={200}
+            />
+            <div className="flex gap-[30px] pl-[15px]">
+              <h1 className="pt-[12px] font-bold">
+                YAYASAN RIADHUL ULUM
+                <br /> AMPENAN
+              </h1>
+            </div>
+            <div className="flex gap-[74px] pt-[20px] pl-[600px]">
+              <Link
+                href="/"
+                className="text-[15px] font-bold flex items-center gap-1 text-[#1F581A]"
+              >
+                <span className="text-[15px] font-bold flex items-center gap-1">
+                  Beranda
+                  <i className="fa-solid fa-chevron-down text-[12px] mt-[2px]" />
+                </span>
+              </Link>
+    
+              <Dropdown
+                title="Profile"
+                items={[
+                  { label: "Visi dan Misi", href: "/visi" },
+                  { label: "Struktur Organisasi", href: "/strukturOrganisasi" },
+                  { label: "Sejarah", href: "/sejarah" },
+                  { label: "Kurikulum", href: "kurikulum" },
+                  { label: "Penerimaan Siswa Baru", href: "psiswabaru" },
+                ]}
+              />
+              <Dropdown
+                title="Layanan"
+                items={[
+                  { label: "Taman Kanak-Kanak", href: "/tk" },
+                  { label: "Madrasah Ibtidaiyah", href: "/mi" },
+                  { label: "Madrasah Tsanawiyah", href: "/mts" },
+                  { label: "Majlis Ta'lim", href: "/majlis" },
+                ]}
+              />
+            </div>
+          </nav>
 
       <div className="bg-[#D9D9D9] w-full py-[20px] pl-[60px]">
         <h1 className="text-[60px] text-[#1F581A] font-thin py">

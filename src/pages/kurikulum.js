@@ -6,62 +6,53 @@ import Link from "next/link";
 export default function kurikulum() {
   return (
     <div>
-      <nav className=" flex pl-3 pr-[60px] bg-[#ffffff]">
-        <Image
-          className=" w-[59px] h-[52px] m-[10px]"
-          src="/logoYayasan.png"
-          alt="logo"
-          width={1500}
-          height={200}
-        />
-        <div className="flex gap-[30px] pl-[15px]">
-          <h1 className="pt-[12px] font-bold">
-            YAYASAN RIADHUL ULUM
-            <br /> AMPENAN
-          </h1>
-        </div>
-        <div className="flex gap-[74px] pt-[20px] pl-[600px]">
-          <Link
-            href="/"
-            className="text-[15px] font-bold flex items-center gap-1 text-[#1F581A]"
-          >
-            <span className="text-[15px] font-bold flex items-center gap-1">
-              Beranda
-              <i className="fa-solid fa-chevron-down text-[12px] mt-[2px]" />
-            </span>
-          </Link>
-
-          <Link
-            className="text-[15px] font-normal text-[#263c72] flex items-center gap-1"
-            href=""
-          >
-            <span className="text-[15px] flex items-center gap-1">
-              Profile
-              <i className="fa-solid fa-chevron-down text-[12px] mt-[2px]" />
-            </span>
-          </Link>
-
-          <Dropdown
-            title="Akademik"
-            items={[
-              { label: "Visi dan Misi", href: "/visi" },
-              { label: "Struktur Organisasi", href: "/strukturOrganisasi" },
-              { label: "Sejarah", href: "/sejarah" },
-              { label: "Kurikulum", href: "kurikulum" },
-              { label: "Penerimaan Siswa Baru", href: "psiswabaru" },
-            ]}
-          />
-
-          <Dropdown
-            title="Layanan"
-            items={[
-              { label: "Taman Kanak-Kanak", href: "#" },
-              { label: "Madrasah Ibtidaiyah", href: "#" },
-              { label: "Madrasah Tsanawiyah", href: "#" },
-            ]}
-          />
-        </div>
-      </nav>
+      {/* Header (tidak diubah) */}
+          <nav className=" flex pl-3 pr-[60px] bg-[#ffffff]">
+            <Image
+              className=" w-[59px] h-[52px] m-[10px]"
+              src="/logoYayasan.png"
+              alt="logo"
+              width={1500}
+              height={200}
+            />
+            <div className="flex gap-[30px] pl-[15px]">
+              <h1 className="pt-[12px] font-bold">
+                YAYASAN RIADHUL ULUM
+                <br /> AMPENAN
+              </h1>
+            </div>
+            <div className="flex gap-[74px] pt-[20px] pl-[600px]">
+              <Link
+                href="/"
+                className="text-[15px] font-bold flex items-center gap-1 text-[#1F581A]"
+              >
+                <span className="text-[15px] font-bold flex items-center gap-1">
+                  Beranda
+                  <i className="fa-solid fa-chevron-down text-[12px] mt-[2px]" />
+                </span>
+              </Link>
+    
+              <Dropdown
+                title="Profile"
+                items={[
+                  { label: "Visi dan Misi", href: "/visi" },
+                  { label: "Struktur Organisasi", href: "/strukturOrganisasi" },
+                  { label: "Sejarah", href: "/sejarah" },
+                  { label: "Kurikulum", href: "kurikulum" },
+                  { label: "Penerimaan Siswa Baru", href: "psiswabaru" },
+                ]}
+              />
+              <Dropdown
+                title="Layanan"
+                items={[
+                  { label: "Taman Kanak-Kanak", href: "/tk" },
+                  { label: "Madrasah Ibtidaiyah", href: "/mi" },
+                  { label: "Madrasah Tsanawiyah", href: "/mts" },
+                  { label: "Majlis Ta'lim", href: "/majlis" },
+                ]}
+              />
+            </div>
+          </nav>
 
       <div className="bg-[#D9D9D9] w-full py-[20px] pl-[60px]">
         <h1 className="text-[60px] text-[#1F581A] font-thin py">Kurikulum</h1>
@@ -71,41 +62,57 @@ export default function kurikulum() {
         <img className="w-full h-[500px]" src="/LandingPage.png" alt="" />
       </div>
 
-      <div className="px-[60px] pt-[50px] ">
+      <div className="px-[60px] pt-[50px]">
         <h2 className="bg-[#1F581A] text-white inline-block py-2 px-5 text-[20px] rounded">
           Kurikulum
         </h2>
-        <h3 className="py-[15px] text-[20px] text-[#35732F]">
-          Yayasan Riadhul Ulum didirikan dengan tujuan utama untuk memberikan
-          pendidikan dan <br /> pembinaan kepada masyarakat, khususnya dalam
-          bidang keagamaan dan sosial. Sejak awal berdirinya,
-          <br /> yayasan ini berkomitmen untuk mencetak generasi yang berakhlak
-          mulia, memiliki wawasan luas,
-          <br /> serta mampu berkontribusi dalam kehidupan bermasyarakat.
-        </h3>
+        <div className="py-[15px]">
+          {/* TK */}
+          <div className="mb-7">
+            <h3 className="text-[20px] text-[#35732F] font-bold mb-2">Taman Kanak-Kanak (TK)</h3>
+            <div className="text-[18px] text-[#35732F]">
+              Kurikulum TK Riadhul Ulum berfokus pada pengembangan karakter, akhlak mulia, dan keterampilan dasar anak melalui pendekatan bermain sambil belajar.
+              <br />
+              <span className="font-semibold">Muatan kurikulum:</span>
+              <ul className="list-disc pl-6">
+                <li>Pengenalan nilai-nilai Islam (doa, adab, hafalan surat pendek)</li>
+                <li>Perkembangan motorik, kognitif, bahasa, dan sosial-emosional</li>
+                <li>Aktivitas kreatif: seni, musik, dan keterampilan hidup sederhana</li>
+              </ul>
+              Kurikulum mengacu pada <span className="italic">Kurikulum Merdeka PAUD</span> dan dipadukan dengan muatan keislaman khas yayasan.
+            </div>
+          </div>
+          {/* MI */}
+          <div className="mb-7">
+            <h3 className="text-[20px] text-[#35732F] font-bold mb-2">Madrasah Ibtidaiyah (MI)</h3>
+            <div className="text-[18px] text-[#35732F]">
+              MI Riadhul Ulum menerapkan <span className="font-semibold">Kurikulum Merdeka</span> yang diperkaya dengan kurikulum Madrasah Kementerian Agama RI.
+              <br />
+              <span className="font-semibold">Muatan kurikulum:</span>
+              <ul className="list-disc pl-6">
+                <li>Pelajaran umum: Matematika, IPA, IPS, Bahasa Indonesia, Bahasa Inggris</li>
+                <li>Pelajaran agama Islam: Al-Qur'an Hadits, Fiqih, Akidah Akhlak, SKI, Bahasa Arab</li>
+              </ul>
+              Kurikulum bertujuan membentuk siswa yang cerdas, berakhlak, dan berwawasan luas.
+            </div>
+          </div>
+          {/* MTs */}
+          <div>
+            <h3 className="text-[20px] text-[#35732F] font-bold mb-2">Madrasah Tsanawiyah (MTs)</h3>
+            <div className="text-[18px] text-[#35732F]">
+              MTs Riadhul Ulum mengadopsi <span className="font-semibold">Kurikulum Merdeka</span> dan kurikulum Madrasah Kemenag RI yang berorientasi pada penguatan keilmuan dan karakter Islami.
+              <br />
+              <span className="font-semibold">Muatan kurikulum:</span>
+              <ul className="list-disc pl-6">
+                <li>Pelajaran umum: Matematika, IPA, IPS, Bahasa Indonesia, Bahasa Inggris, TIK</li>
+                <li>Pelajaran Agama: Al-Qur'an Hadits, Fiqih, Akidah Akhlak, SKI, Bahasa Arab</li>
+              </ul>
+              Lulusan diharapkan berilmu pengetahuan, berkarakter, dan siap melanjutkan ke jenjang lebih tinggi.
+            </div>
+          </div>
+        </div>
       </div>
-
-      <div className="px-[60px] pt-[50px] ">
-        <h2 className="bg-[#1F581A] text-white inline-block py-2 px-5 text-[20px] rounded">
-          Awal beridiri
-        </h2>
-        <h3 className="py-[15px] text-[20px] text-[#35732F]">
-          Yayasan Riadhul Ulum didirikan oleh Tuan Doktorandus Haji Lukman Al
-          Hakim, seorang <br />
-          Pembantu Dekan III Institut Agama Islam Negeri Sunan Ampel Mataram,
-          dan Tuan Lalu Istana <br /> Taufiq, seorang Pegawai Negeri. Yayasan
-          ini bermula dari semangat untuk memajukan pendidikan <br /> dan
-          kesejahteraan sosial, dengan mendirikan sebuah badan hukum berbentuk
-          yayasan (Stichting) <br /> berdasarkan Undang-Undang Republik
-          Indonesia Nomor 16 Tahun 2001 tentang Yayasan junto <br />{" "}
-          Undang-Undang Nomor 28 Tahun 2004 tentang Perubahan Atas Undang-Undang
-          Nomor 16 Tahun <br /> 2001. Dengan modal awal sebesar Rp.
-          1.380.000.000,- (satu miliar tiga ratus delapan <br /> puluh juta
-          rupiah) berupa tanah dan bangunan, yayasan ini mulai beroperasi dan
-          memberikan manfaat kepada masyarakat luas.
-        </h3>
-      </div>
-
+       
       <footer>
         <div className="bg-[#3f543f] w-full h-[200px] flex items-center justify-between px-[200px] pt-[100px]">
           <div>

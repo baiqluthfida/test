@@ -6,62 +6,53 @@ import Link from "next/link";
 export default function HomePage() {
   return (
     <div>
-      <nav className=" flex pl-3 pr-[60px] bg-[#ffffff]">
-        <Image
-          className=" w-[59px] h-[52px] m-[10px]"
-          src="/logoYayasan.png"
-          alt="logo"
-          width={1500}
-          height={200}
-        />
-        <div className="flex gap-[30px] pl-[15px]">
-          <h1 className="pt-[12px] font-bold">
-            YAYASAN RIADHUL ULUM
-            <br /> AMPENAN
-          </h1>
-        </div>
-        <div className="flex gap-[74px] pt-[20px] pl-[600px]">
-          <Link
-            href="/"
-            className="text-[15px] font-bold flex items-center gap-1 text-[#1F581A]"
-          >
-            <span className="text-[15px] font-bold flex items-center gap-1">
-              Beranda
-              <i className="fa-solid fa-chevron-down text-[12px] mt-[2px]" />
-            </span>
-          </Link>
-
-          <Link
-            className="text-[15px] font-normal text-[#263c72] flex items-center gap-1"
-            href=""
-          >
-            <span className="text-[15px] flex items-center gap-1">
-              Profile
-              <i className="fa-solid fa-chevron-down text-[12px] mt-[2px]" />
-            </span>
-          </Link>
-
-          <Dropdown
-            title="Akademik"
-            items={[
-              { label: "Visi dan Misi", href: "/visi" },
-              { label: "Struktur Organisasi", href: "/strukturOrganisasi" },
-              { label: "Sejarah", href: "/sejarah" },
-              { label: "Kurikulum", href: "/kurikulum" },
-              { label: "Penerimaan Siswa Baru", href: "/psiswabaru" },
-            ]}
-          />
-
-          <Dropdown
-            title="Layanan"
-            items={[
-              { label: "Taman Kanak-Kanak", href: "#" },
-              { label: "Madrasah Ibtidaiyah", href: "#" },
-              { label: "Madrasah Tsanawiyah", href: "#" },
-            ]}
-          />
-        </div>
-      </nav>
+          {/* Header (tidak diubah) */}
+          <nav className=" flex pl-3 pr-[60px] bg-[#ffffff]">
+            <Image
+              className=" w-[59px] h-[52px] m-[10px]"
+              src="/logoYayasan.png"
+              alt="logo"
+              width={1500}
+              height={200}
+            />
+            <div className="flex gap-[30px] pl-[15px]">
+              <h1 className="pt-[12px] font-bold">
+                YAYASAN RIADHUL ULUM
+                <br /> AMPENAN
+              </h1>
+            </div>
+            <div className="flex gap-[74px] pt-[20px] pl-[600px]">
+              <Link
+                href="/"
+                className="text-[15px] font-bold flex items-center gap-1 text-[#1F581A]"
+              >
+                <span className="text-[15px] font-bold flex items-center gap-1">
+                  Beranda
+                  <i className="fa-solid fa-chevron-down text-[12px] mt-[2px]" />
+                </span>
+              </Link>
+    
+              <Dropdown
+                title="Profile"
+                items={[
+                  { label: "Visi dan Misi", href: "/visi" },
+                  { label: "Struktur Organisasi", href: "/strukturOrganisasi" },
+                  { label: "Sejarah", href: "/sejarah" },
+                  { label: "Kurikulum", href: "kurikulum" },
+                  { label: "Penerimaan Siswa Baru", href: "psiswabaru" },
+                ]}
+              />
+              <Dropdown
+                title="Layanan"
+                items={[
+                  { label: "Taman Kanak-Kanak", href: "/tk" },
+                  { label: "Madrasah Ibtidaiyah", href: "/mi" },
+                  { label: "Madrasah Tsanawiyah", href: "/mts" },
+                  { label: "Majlis Ta'lim", href: "/majlis" },
+                ]}
+              />
+            </div>
+          </nav>
 
       <div className="relative w-full h-[700px]">
         <Image
@@ -85,7 +76,7 @@ export default function HomePage() {
       <div className="p-[120px]">
         <div className="flex justify-center gap-[90px]">
           <Link
-            href="https://instagram.com"
+            href="/komunitas"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -98,7 +89,7 @@ export default function HomePage() {
           </Link>
 
           <Link
-            href="https://instagram.com"
+            href="/akademik"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -111,7 +102,7 @@ export default function HomePage() {
           </Link>
 
           <Link
-            href="https://instagram.com"
+            href="/tentangkami"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -152,16 +143,17 @@ export default function HomePage() {
             tantangan zaman Kami percaya bahwa setiap santri memiliki potensi
             luar biasa.
           </h4>
+          <Link href="/profile" passHref>
           <button className="bg-[#35732F] text-white w-[150px] h-[50px] rounded-[16px]">
             Selengkapnya &gt;
           </button>
+        </Link>
         </div>
       </div>
 
       <div className="bg-[#AFBFAF] w-[100%] h-[410px] ">
         <h1 className="text-center pt-[100px] text-[#192318] font-bold text-[40px] font-poppins ">
-          " Berhenti belajar membuat kita bodoh, <br /> Berhenti kita cepat
-          pikun, <br /> Berhenti berdzikir membuat kita lupa diri "
+          " Berhenti belajar membuat kita bodoh, <br /> Berhenti berpikir membuat kita lekas pikun, <br /> Berhenti berdzikir membuat kita lupa diri "
         </h1>
         <p className="text-center text-[#192318] font-thin text-[15px] font-poppins pt-9">
           K.H. Ahmad Mustofa Bisri
@@ -184,7 +176,7 @@ export default function HomePage() {
             penerimaan Siswa <br />
             Baru 2015
           </h4>
-          <Link className="text-[#1F581A] text-[15px] mt-2" href="">
+          <Link className="text-[#1F581A] text-[15px] mt-2" href="/psiswabaru">
             selengkapnya &gt;
           </Link>
         </div>
