@@ -7,53 +7,53 @@ export default function PesantrenRamadhan() {
   return (
     <div>
       {/* Header (tidak diubah) */}
-     {/* Header (tidak diubah) */}
-          <nav className=" flex pl-3 pr-[60px] bg-[#ffffff]">
-            <Image
-              className=" w-[59px] h-[52px] m-[10px]"
-              src="/logoYayasan.png"
-              alt="logo"
-              width={1500}
-              height={200}
-            />
-            <div className="flex gap-[30px] pl-[15px]">
-              <h1 className="pt-[12px] font-bold">
-                YAYASAN RIADHUL ULUM
-                <br /> AMPENAN
-              </h1>
-            </div>
-            <div className="flex gap-[74px] pt-[20px] pl-[600px]">
-              <Link
-                href="/"
-                className="text-[15px] font-bold flex items-center gap-1 text-[#1F581A]"
-              >
-                <span className="text-[15px] font-bold flex items-center gap-1">
-                  Beranda
-                  <i className="fa-solid fa-chevron-down text-[12px] mt-[2px]" />
-                </span>
-              </Link>
-    
-              <Dropdown
-                title="Profile"
-                items={[
-                  { label: "Visi dan Misi", href: "/visi" },
-                  { label: "Struktur Organisasi", href: "/strukturOrganisasi" },
-                  { label: "Sejarah", href: "/sejarah" },
-                  { label: "Kurikulum", href: "kurikulum" },
-                  { label: "Penerimaan Siswa Baru", href: "psiswabaru" },
-                ]}
-              />
-              <Dropdown
-                title="Layanan"
-                items={[
-                  { label: "Taman Kanak-Kanak", href: "/tk" },
-                  { label: "Madrasah Ibtidaiyah", href: "/mi" },
-                  { label: "Madrasah Tsanawiyah", href: "/mts" },
-                  { label: "Majlis Ta'lim", href: "/majlis" },
-                ]}
-              />
-            </div>
-          </nav>
+      {/* Header (tidak diubah) */}
+      <nav className=" flex pl-3 pr-[60px] bg-[#ffffff]">
+        <Image
+          className=" w-[59px] h-[52px] m-[10px]"
+          src="/logoYayasan.png"
+          alt="logo"
+          width={1500}
+          height={200}
+        />
+        <div className="flex gap-[30px] pl-[15px]">
+          <h1 className="pt-[12px] font-bold">
+            YAYASAN RIADHUL ULUM
+            <br /> AMPENAN
+          </h1>
+        </div>
+        <div className="flex gap-[74px] pt-[20px] pl-[750px]">
+          <Link
+            href="/"
+            className="text-[15px] font-bold flex items-center gap-1 text-[#1F581A]"
+          >
+            <span className="text-[15px] font-bold flex items-center gap-1">
+              Beranda
+              <i className="fa-solid fa-chevron-down text-[12px] mt-[2px]" />
+            </span>
+          </Link>
+
+          <Dropdown
+            title="Profile"
+            items={[
+              { label: "Visi dan Misi", href: "/visi" },
+              { label: "Struktur Organisasi", href: "/strukturOrganisasi" },
+              { label: "Sejarah", href: "/sejarah" },
+              { label: "Kurikulum", href: "kurikulum" },
+              { label: "Penerimaan Siswa Baru", href: "psiswabaru" },
+            ]}
+          />
+          <Dropdown
+            title="Layanan"
+            items={[
+              { label: "Taman Kanak-Kanak", href: "/tk" },
+              { label: "Madrasah Ibtidaiyah", href: "/mi" },
+              { label: "Madrasah Tsanawiyah", href: "/mts" },
+              { label: "Majlis Ta'lim", href: "/majlis" },
+            ]}
+          />
+        </div>
+      </nav>
 
       {/* Judul Section */}
       <section className="bg-gradient-to-r from-[#e5ffe5] via-[#D9D9D9] to-[#f2f2f2] w-full py-12 flex items-center justify-center shadow-inner">
@@ -67,18 +67,18 @@ export default function PesantrenRamadhan() {
         </div>
       </section>
 
-    {/* Gambar lebih tinggi agar tidak terpotong */}
-<div className="flex justify-center -mt-10 mb-10 relative z-10">
-  <div className="rounded-3xl shadow-lg overflow-hidden border-4 border-[#247536]/20 max-w-5xl w-full bg-white h-[520px] md:h-[620px]">
-    <Image
-      src="/full.jpg"
-      alt="Pesantren Ramadhan"
-      fill
-      className="object-cover rounded-3xl"
-      style={{ objectPosition: "center" }}
-    />
-  </div>
-</div>
+      {/* Gambar lebih tinggi agar tidak terpotong */}
+      <div className="flex justify-center -mt-10 mb-10 relative z-10">
+        <div className="rounded-3xl shadow-lg overflow-hidden border-4 border-[#247536]/20 max-w-4xl w-full bg-white hover:shadow-2xl transition-all duration-300">
+          <Image
+            className="w-full h-[320px] md:h-[400px] object-cover object-center transition-all duration-500"
+            src="/full.jpg"
+            alt="Pesantren Ramadhan"
+            width={1500}
+            height={200}
+          />
+        </div>
+      </div>
 
       {/* Isi dengan card */}
       <div className="px-4 md:px-[60px] pt-[10px] pb-16 flex flex-col items-center">
@@ -87,11 +87,31 @@ export default function PesantrenRamadhan() {
             PESANTREN RAMADHAN
           </h2>
           <p className="text-gray-800 text-base md:text-lg leading-relaxed font-light mb-6 text-justify">
-            <span className="font-semibold text-[#35732F]">Pesantren Ramadhan</span> merupakan salah satu program rutin tahunan yang diselenggarakan setiap bulan Ramadhan. Kegiatan ini dilaksanakan selama <span className="font-semibold">tiga hari</span>, tepat sebelum siswa diliburkan untuk menyambut Hari Raya Idul Fitri.
-            <br /><br />
-            Program ini diikuti oleh seluruh siswa dan siswi dari <span className="font-semibold">kelas 4 MI hingga kelas 9 MTs</span>, dengan tujuan utama untuk memperkuat pemahaman keislaman, memperdalam ibadah, serta menanamkan nilai-nilai spiritual selama bulan suci Ramadhan.
-            <br /><br />
-            Selama kegiatan berlangsung, para peserta akan mengikuti berbagai aktivitas bernuansa islami seperti <span className="font-semibold">kajian keagamaan</span>, <span className="font-semibold">tadarus Al-Qur’an</span>, <span className="font-semibold">ceramah motivasi</span>, serta <span className="font-semibold">praktik ibadah harian</span>. Pesantren Ramadhan ini tidak hanya menjadi momen pembelajaran spiritual, tetapi juga sarana untuk membentuk karakter dan mempererat ukhuwah antar siswa.
+            <span className="font-semibold text-[#35732F]">
+              Pesantren Ramadhan
+            </span>{" "}
+            merupakan salah satu program rutin tahunan yang diselenggarakan
+            setiap bulan Ramadhan. Kegiatan ini dilaksanakan selama{" "}
+            <span className="font-semibold">tiga hari</span>, tepat sebelum
+            siswa diliburkan untuk menyambut Hari Raya Idul Fitri.
+            <br />
+            <br />
+            Program ini diikuti oleh seluruh siswa dan siswi dari{" "}
+            <span className="font-semibold">kelas 4 MI hingga kelas 9 MTs</span>
+            , dengan tujuan utama untuk memperkuat pemahaman keislaman,
+            memperdalam ibadah, serta menanamkan nilai-nilai spiritual selama
+            bulan suci Ramadhan.
+            <br />
+            <br />
+            Selama kegiatan berlangsung, para peserta akan mengikuti berbagai
+            aktivitas bernuansa islami seperti{" "}
+            <span className="font-semibold">kajian keagamaan</span>,{" "}
+            <span className="font-semibold">tadarus Al-Qur’an</span>,{" "}
+            <span className="font-semibold">ceramah motivasi</span>, serta{" "}
+            <span className="font-semibold">praktik ibadah harian</span>.
+            Pesantren Ramadhan ini tidak hanya menjadi momen pembelajaran
+            spiritual, tetapi juga sarana untuk membentuk karakter dan
+            mempererat ukhuwah antar siswa.
           </p>
         </article>
       </div>

@@ -8,52 +8,52 @@ export default function sejarah() {
     <div>
       {/* Header (tidak diubah) */}
       {/* Header (tidak diubah) */}
-          <nav className=" flex pl-3 pr-[60px] bg-[#ffffff]">
-            <Image
-              className=" w-[59px] h-[52px] m-[10px]"
-              src="/logoYayasan.png"
-              alt="logo"
-              width={1500}
-              height={200}
-            />
-            <div className="flex gap-[30px] pl-[15px]">
-              <h1 className="pt-[12px] font-bold">
-                YAYASAN RIADHUL ULUM
-                <br /> AMPENAN
-              </h1>
-            </div>
-            <div className="flex gap-[74px] pt-[20px] pl-[600px]">
-              <Link
-                href="/"
-                className="text-[15px] font-bold flex items-center gap-1 text-[#1F581A]"
-              >
-                <span className="text-[15px] font-bold flex items-center gap-1">
-                  Beranda
-                  <i className="fa-solid fa-chevron-down text-[12px] mt-[2px]" />
-                </span>
-              </Link>
-    
-              <Dropdown
-                title="Profile"
-                items={[
-                  { label: "Visi dan Misi", href: "/visi" },
-                  { label: "Struktur Organisasi", href: "/strukturOrganisasi" },
-                  { label: "Sejarah", href: "/sejarah" },
-                  { label: "Kurikulum", href: "kurikulum" },
-                  { label: "Penerimaan Siswa Baru", href: "psiswabaru" },
-                ]}
-              />
-              <Dropdown
-                title="Layanan"
-                items={[
-                  { label: "Taman Kanak-Kanak", href: "/tk" },
-                  { label: "Madrasah Ibtidaiyah", href: "/mi" },
-                  { label: "Madrasah Tsanawiyah", href: "/mts" },
-                  { label: "Majlis Ta'lim", href: "/majlis" },
-                ]}
-              />
-            </div>
-          </nav>
+      <nav className=" flex pl-3 pr-[60px] bg-[#ffffff]">
+        <Image
+          className=" w-[59px] h-[52px] m-[10px]"
+          src="/logoYayasan.png"
+          alt="logo"
+          width={1500}
+          height={200}
+        />
+        <div className="flex gap-[30px] pl-[15px]">
+          <h1 className="pt-[12px] font-bold">
+            YAYASAN RIADHUL ULUM
+            <br /> AMPENAN
+          </h1>
+        </div>
+        <div className="flex gap-[74px] pt-[20px] pl-[750px]">
+          <Link
+            href="/"
+            className="text-[15px] font-bold flex items-center gap-1 text-[#1F581A]"
+          >
+            <span className="text-[15px] font-bold flex items-center gap-1">
+              Beranda
+              <i className="fa-solid fa-chevron-down text-[12px] mt-[2px]" />
+            </span>
+          </Link>
+
+          <Dropdown
+            title="Profile"
+            items={[
+              { label: "Visi dan Misi", href: "/visi" },
+              { label: "Struktur Organisasi", href: "/strukturOrganisasi" },
+              { label: "Sejarah", href: "/sejarah" },
+              { label: "Kurikulum", href: "kurikulum" },
+              { label: "Penerimaan Siswa Baru", href: "psiswabaru" },
+            ]}
+          />
+          <Dropdown
+            title="Layanan"
+            items={[
+              { label: "Taman Kanak-Kanak", href: "/tk" },
+              { label: "Madrasah Ibtidaiyah", href: "/mi" },
+              { label: "Madrasah Tsanawiyah", href: "/mts" },
+              { label: "Majlis Ta'lim", href: "/majlis" },
+            ]}
+          />
+        </div>
+      </nav>
 
       {/* JUDUL */}
       <section className="bg-gradient-to-r from-[#D9D9D9] via-[#e8f5e9] to-[#d0f5c7] w-full py-[40px] px-[60px] flex items-center gap-6">
@@ -77,14 +77,9 @@ export default function sejarah() {
       </div>
 
       {/* Majlis Ta'lim */}
-        <div className="mb-7">
-        <h3 className="text-[20px] text-[#35732F] font-bold mb-2">
-            Akademik
-        </h3>
-        <div className="text-[18px] text-[#35732F]">
-            
-        </div>
-        </div>
+      <div className="mb-7">
+        <div className="text-[18px] text-[#35732F]"></div>
+      </div>
 
       {/* Footer (tidak diubah) */}
       <footer>

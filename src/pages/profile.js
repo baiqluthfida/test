@@ -8,52 +8,52 @@ export default function sejarah() {
     <div>
       {/* Header (tidak diubah) */}
       {/* Header (tidak diubah) */}
-          <nav className=" flex pl-3 pr-[60px] bg-[#ffffff]">
-            <Image
-              className=" w-[59px] h-[52px] m-[10px]"
-              src="/logoYayasan.png"
-              alt="logo"
-              width={1500}
-              height={200}
-            />
-            <div className="flex gap-[30px] pl-[15px]">
-              <h1 className="pt-[12px] font-bold">
-                YAYASAN RIADHUL ULUM
-                <br /> AMPENAN
-              </h1>
-            </div>
-            <div className="flex gap-[74px] pt-[20px] pl-[600px]">
-              <Link
-                href="/"
-                className="text-[15px] font-bold flex items-center gap-1 text-[#1F581A]"
-              >
-                <span className="text-[15px] font-bold flex items-center gap-1">
-                  Beranda
-                  <i className="fa-solid fa-chevron-down text-[12px] mt-[2px]" />
-                </span>
-              </Link>
-    
-              <Dropdown
-                title="Profile"
-                items={[
-                  { label: "Visi dan Misi", href: "/visi" },
-                  { label: "Struktur Organisasi", href: "/strukturOrganisasi" },
-                  { label: "Sejarah", href: "/sejarah" },
-                  { label: "Kurikulum", href: "kurikulum" },
-                  { label: "Penerimaan Siswa Baru", href: "psiswabaru" },
-                ]}
-              />
-              <Dropdown
-                title="Layanan"
-                items={[
-                  { label: "Taman Kanak-Kanak", href: "/tk" },
-                  { label: "Madrasah Ibtidaiyah", href: "/mi" },
-                  { label: "Madrasah Tsanawiyah", href: "/mts" },
-                  { label: "Majlis Ta'lim", href: "/majlis" },
-                ]}
-              />
-            </div>
-          </nav>
+      <nav className=" flex pl-3 pr-[60px] bg-[#ffffff]">
+        <Image
+          className=" w-[59px] h-[52px] m-[10px]"
+          src="/logoYayasan.png"
+          alt="logo"
+          width={1500}
+          height={200}
+        />
+        <div className="flex gap-[30px] pl-[15px]">
+          <h1 className="pt-[12px] font-bold">
+            YAYASAN RIADHUL ULUM
+            <br /> AMPENAN
+          </h1>
+        </div>
+        <div className="flex gap-[74px] pt-[20px] pl-[750px]">
+          <Link
+            href="/"
+            className="text-[15px] font-bold flex items-center gap-1 text-[#1F581A]"
+          >
+            <span className="text-[15px] font-bold flex items-center gap-1">
+              Beranda
+              <i className="fa-solid fa-chevron-down text-[12px] mt-[2px]" />
+            </span>
+          </Link>
+
+          <Dropdown
+            title="Profile"
+            items={[
+              { label: "Visi dan Misi", href: "/visi" },
+              { label: "Struktur Organisasi", href: "/strukturOrganisasi" },
+              { label: "Sejarah", href: "/sejarah" },
+              { label: "Kurikulum", href: "kurikulum" },
+              { label: "Penerimaan Siswa Baru", href: "psiswabaru" },
+            ]}
+          />
+          <Dropdown
+            title="Layanan"
+            items={[
+              { label: "Taman Kanak-Kanak", href: "/tk" },
+              { label: "Madrasah Ibtidaiyah", href: "/mi" },
+              { label: "Madrasah Tsanawiyah", href: "/mts" },
+              { label: "Majlis Ta'lim", href: "/majlis" },
+            ]}
+          />
+        </div>
+      </nav>
 
       {/* JUDUL */}
       <section className="bg-gradient-to-r from-[#D9D9D9] via-[#e8f5e9] to-[#d0f5c7] w-full py-[40px] px-[60px] flex items-center gap-6">
@@ -83,10 +83,26 @@ export default function sejarah() {
             Profile Yayasan Riadhul Ulum
           </h2>
           <p className="text-gray-700 text-base md:text-lg leading-relaxed font-light mb-6 text-justify">
-            Yayasan Riadhul Ulum adalah lembaga pendidikan Islam yang berkomitmen mencetak generasi yang berilmu, berakhlak mulia, dan berdaya guna bagi masyarakat. Didirikan oleh Drs. H. Lukman Al Hakim dan Lalu Istana Taufiq, yayasan ini berdiri atas dasar kepedulian terhadap pendidikan dan kesejahteraan sosial, dengan legalitas berdasarkan Undang-Undang Republik Indonesia Nomor 16 Tahun 2001 junto Undang-Undang Nomor 28 Tahun 2004.
-            Dengan modal awal berupa tanah dan bangunan senilai Rp. 1.380.000.000,-, Yayasan Riadhul Ulum menaungi sejumlah lembaga pendidikan seperti TK Bulan Tsabit, MI Riadhul Ulum, dan MTs Riadhul Ulum. Setiap satuan pendidikan tersebut menerapkan pendekatan pembelajaran yang menyeluruh, menggabungkan aspek akademik, keagamaan, dan pembentukan karakter santri.
-            Didukung oleh tenaga pendidik yang profesional dan lingkungan belajar yang kondusif, proses pendidikan berlangsung secara efektif dan berorientasi pada pengembangan potensi santri secara optimal. Kami percaya bahwa setiap santri memiliki potensi luar biasa untuk tumbuh menjadi pribadi yang siap menghadapi tantangan zaman, serta mampu memberikan kontribusi positif bagi masyarakat.
-           </p>
+            Yayasan Riadhul Ulum adalah lembaga pendidikan Islam yang
+            berkomitmen mencetak generasi yang berilmu, berakhlak mulia, dan
+            berdaya guna bagi masyarakat. Didirikan oleh Drs. H. Lukman Al Hakim
+            dan Lalu Istana Taufiq, yayasan ini berdiri atas dasar kepedulian
+            terhadap pendidikan dan kesejahteraan sosial, dengan legalitas
+            berdasarkan Undang-Undang Republik Indonesia Nomor 16 Tahun 2001
+            junto Undang-Undang Nomor 28 Tahun 2004. Dengan modal awal berupa
+            tanah dan bangunan senilai Rp. 1.380.000.000,-, Yayasan Riadhul Ulum
+            menaungi sejumlah lembaga pendidikan seperti TK Bulan Tsabit, MI
+            Riadhul Ulum, dan MTs Riadhul Ulum. Setiap satuan pendidikan
+            tersebut menerapkan pendekatan pembelajaran yang menyeluruh,
+            menggabungkan aspek akademik, keagamaan, dan pembentukan karakter
+            santri. Didukung oleh tenaga pendidik yang profesional dan
+            lingkungan belajar yang kondusif, proses pendidikan berlangsung
+            secara efektif dan berorientasi pada pengembangan potensi santri
+            secara optimal. Kami percaya bahwa setiap santri memiliki potensi
+            luar biasa untuk tumbuh menjadi pribadi yang siap menghadapi
+            tantangan zaman, serta mampu memberikan kontribusi positif bagi
+            masyarakat.
+          </p>
         </article>
       </div>
 

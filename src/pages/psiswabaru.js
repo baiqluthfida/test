@@ -7,53 +7,53 @@ export default function Ppdb() {
   return (
     <div>
       {/* Header (tidak diubah) */}
-   {/* Header (tidak diubah) */}
-          <nav className=" flex pl-3 pr-[60px] bg-[#ffffff]">
-            <Image
-              className=" w-[59px] h-[52px] m-[10px]"
-              src="/logoYayasan.png"
-              alt="logo"
-              width={1500}
-              height={200}
-            />
-            <div className="flex gap-[30px] pl-[15px]">
-              <h1 className="pt-[12px] font-bold">
-                YAYASAN RIADHUL ULUM
-                <br /> AMPENAN
-              </h1>
-            </div>
-            <div className="flex gap-[74px] pt-[20px] pl-[600px]">
-              <Link
-                href="/"
-                className="text-[15px] font-bold flex items-center gap-1 text-[#1F581A]"
-              >
-                <span className="text-[15px] font-bold flex items-center gap-1">
-                  Beranda
-                  <i className="fa-solid fa-chevron-down text-[12px] mt-[2px]" />
-                </span>
-              </Link>
-    
-              <Dropdown
-                title="Profile"
-                items={[
-                  { label: "Visi dan Misi", href: "/visi" },
-                  { label: "Struktur Organisasi", href: "/strukturOrganisasi" },
-                  { label: "Sejarah", href: "/sejarah" },
-                  { label: "Kurikulum", href: "kurikulum" },
-                  { label: "Penerimaan Siswa Baru", href: "psiswabaru" },
-                ]}
-              />
-              <Dropdown
-                title="Layanan"
-                items={[
-                  { label: "Taman Kanak-Kanak", href: "/tk" },
-                  { label: "Madrasah Ibtidaiyah", href: "/mi" },
-                  { label: "Madrasah Tsanawiyah", href: "/mts" },
-                  { label: "Majlis Ta'lim", href: "/majlis" },
-                ]}
-              />
-            </div>
-          </nav>
+      {/* Header (tidak diubah) */}
+      <nav className=" flex pl-3 pr-[60px] bg-[#ffffff]">
+        <Image
+          className=" w-[59px] h-[52px] m-[10px]"
+          src="/logoYayasan.png"
+          alt="logo"
+          width={1500}
+          height={200}
+        />
+        <div className="flex gap-[30px] pl-[15px]">
+          <h1 className="pt-[12px] font-bold">
+            YAYASAN RIADHUL ULUM
+            <br /> AMPENAN
+          </h1>
+        </div>
+        <div className="flex gap-[74px] pt-[20px] pl-[750px]">
+          <Link
+            href="/"
+            className="text-[15px] font-bold flex items-center gap-1 text-[#1F581A]"
+          >
+            <span className="text-[15px] font-bold flex items-center gap-1">
+              Beranda
+              <i className="fa-solid fa-chevron-down text-[12px] mt-[2px]" />
+            </span>
+          </Link>
+
+          <Dropdown
+            title="Profile"
+            items={[
+              { label: "Visi dan Misi", href: "/visi" },
+              { label: "Struktur Organisasi", href: "/strukturOrganisasi" },
+              { label: "Sejarah", href: "/sejarah" },
+              { label: "Kurikulum", href: "kurikulum" },
+              { label: "Penerimaan Siswa Baru", href: "psiswabaru" },
+            ]}
+          />
+          <Dropdown
+            title="Layanan"
+            items={[
+              { label: "Taman Kanak-Kanak", href: "/tk" },
+              { label: "Madrasah Ibtidaiyah", href: "/mi" },
+              { label: "Madrasah Tsanawiyah", href: "/mts" },
+              { label: "Majlis Ta'lim", href: "/majlis" },
+            ]}
+          />
+        </div>
+      </nav>
 
       {/* JUDUL */}
       <section className="bg-gradient-to-r from-[#e5ffe5] via-[#D9D9D9] to-[#f2f2f2] w-full py-12 flex items-center justify-center shadow-inner">
@@ -62,7 +62,8 @@ export default function Ppdb() {
             Penerimaan Peserta Didik Baru
           </h1>
           <p className="text-[#377c3b] text-lg mt-3 font-light italic max-w-2xl mx-auto">
-            Bergabunglah bersama kami membangun generasi Islam yang cerdas dan berakhlak mulia!
+            Bergabunglah bersama kami membangun generasi Islam yang cerdas dan
+            berakhlak mulia!
           </p>
           <div className="mt-4 flex justify-center">
             <span className="inline-block w-24 h-2 rounded-full bg-gradient-to-r from-[#247536] to-[#5be584]" />
@@ -89,7 +90,10 @@ export default function Ppdb() {
           </h2>
           <ul className="mb-6 text-gray-700 text-base md:text-lg font-light list-disc space-y-3 pl-5">
             <li>
-              <span className="font-semibold text-[#1F581A]">PPDB</span> Yayasan Riadhul Ulum membuka peluang bagi putra-putri Anda untuk bergabung di lingkungan pendidikan yang religius, berkualitas, dan berakhlak mulia.
+              <span className="font-semibold text-[#1F581A]">PPDB</span> Yayasan
+              Riadhul Ulum membuka peluang bagi putra-putri Anda untuk bergabung
+              di lingkungan pendidikan yang religius, berkualitas, dan berakhlak
+              mulia.
             </li>
             <li>
               <span className="font-semibold">Jenjang pendaftaran:</span>
@@ -100,16 +104,24 @@ export default function Ppdb() {
               </ul>
             </li>
             <li>
-              Proses pendaftaran <span className="font-semibold">mudah, terbuka, dan transparan</span> serta dapat diakses oleh masyarakat umum.
+              Proses pendaftaran{" "}
+              <span className="font-semibold">
+                mudah, terbuka, dan transparan
+              </span>{" "}
+              serta dapat diakses oleh masyarakat umum.
             </li>
             <li>
-              Kurikulum mengintegrasikan ilmu pengetahuan umum dan keislaman, disertai pembelajaran aktif, menyenangkan, serta berbasis karakter.
+              Kurikulum mengintegrasikan ilmu pengetahuan umum dan keislaman,
+              disertai pembelajaran aktif, menyenangkan, serta berbasis
+              karakter.
             </li>
             <li>
-              <span className="font-semibold">Tenaga pendidik profesional</span> dan lingkungan belajar yang aman, nyaman, serta kondusif, siap membina generasi muda menjadi insan yang cerdas, bertakwa, dan siap menghadapi tantangan masa depan.
+              <span className="font-semibold">Tenaga pendidik profesional</span>{" "}
+              dan lingkungan belajar yang aman, nyaman, serta kondusif, siap
+              membina generasi muda menjadi insan yang cerdas, bertakwa, dan
+              siap menghadapi tantangan masa depan.
             </li>
           </ul>
-    
         </article>
       </div>
 

@@ -19,7 +19,7 @@ export default function HomePage() {
             <br /> AMPENAN
           </h1>
         </div>
-        <div className="flex gap-[74px] pt-[20px] pl-[600px]">
+        <div className="flex gap-[74px] pt-[20px] pl-[750px]">
           <a
             className="text-[15px] font-bold text-[#35732F] flex items-center gap-1"
             href=""
