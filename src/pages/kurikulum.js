@@ -81,7 +81,7 @@ export default function Kurikulum() {
             width={1500}
             height={200}
           />
-        </div>
+        </div>h
       </div>
 
       {/* Isi dengan card dan penekanan pada kata kunci */}
@@ -93,7 +93,7 @@ export default function Kurikulum() {
           </h2>
           <p className="text-gray-800 text-base md:text-lg leading-relaxed font-light mb-4 text-justify">
             <span className="font-semibold text-[#35732F]">
-              Taman Kanak-kanak
+              Taman Kanak-kanak 
             </span>{" "}
             Kurikulum TK Riadhul Ulum berfokus pada pengembangan karakter,
             akhlak mulia, dan keterampilan dasar anak melalui pendekatan bermain

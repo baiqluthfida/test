@@ -3,14 +3,13 @@ import React from "react";
 import Dropdown from "@/components/Dropdown";
 import Link from "next/link";
 
-export default function sejarah() {
+export default function PengajianBulanan() {
   return (
     <div>
       {/* Header (tidak diubah) */}
-      {/* Header (tidak diubah) */}
-      <nav className=" flex pl-3 pr-[60px] bg-[#ffffff]">
+      <nav className="flex pl-3 pr-[60px] bg-[#ffffff]">
         <Image
-          className=" w-[59px] h-[52px] m-[10px]"
+          className="w-[59px] h-[52px] m-[10px]"
           src="/logoYayasan.png"
           alt="logo"
           width={1500}
@@ -55,60 +54,59 @@ export default function sejarah() {
         </div>
       </nav>
 
-      {/* JUDUL */}
-      <section className="bg-gradient-to-r from-[#D9D9D9] via-[#e8f5e9] to-[#d0f5c7] w-full py-[40px] px-[60px] flex items-center gap-6">
-        <div>
-          <h1 className="text-[54px] md:text-[70px] text-[#1F581A] font-extrabold tracking-tight drop-shadow-lg leading-tight">
-            Madrasah Tsanawiyah
+      {/* Judul Section */}
+      <section className="bg-gradient-to-r from-[#e5ffe5] via-[#D9D9D9] to-[#f2f2f2] w-full py-12 flex items-center justify-center shadow-inner">
+        <div className="text-center">
+          <h1 className="text-[48px] md:text-[60px] text-[#247536] font-extrabold tracking-wide drop-shadow-md uppercase">
+            Berita Terkini
           </h1>
-          <div className="mt-3 w-24 h-2 bg-gradient-to-r from-[#1F581A] to-[#5be584] rounded-full"></div>
+          <div className="mt-2 flex justify-center">
+            <span className="inline-block w-24 h-2 rounded-full bg-gradient-to-r from-[#247536] to-[#5be584]" />
+          </div>
         </div>
       </section>
 
-      {/* GAMBAR */}
-      <div className="flex justify-center -mt-12 mb-10 ">
-        <div className="rounded-3xl shadow-2xl overflow-hidden border-4 border-[#1F581A]/20 max-w-4xl w-full">
-          <img
-            className="w-full h-[340px] md:h-[420px] object-cover object-center transition-transform duration-500 hover:scale-105"
-            src="/mts.png"
-            alt="Madrasah Tsanawiyah"
+      {/* Gambar lebih tinggi agar tidak terpotong */}
+      <div className="flex justify-center -mt-10 mb-10 relative z-10">
+        <div className="rounded-3xl shadow-lg overflow-hidden border-4 border-[#247536]/20 max-w-4xl w-full bg-white hover:shadow-2xl transition-all duration-300">
+          <Image
+            className="w-full h-[320px] md:h-[400px] object-cover object-center transition-all duration-500"
+            src="/full.jpg"
+            alt="Pengajian Bulanan"
+            width={1500}
+            height={200}
           />
         </div>
       </div>
 
-      {/* ISI */}
-      <div className="px-[20px] md:px-[60px] pt-[10px] pb-16 flex flex-col items-center">
-        <article className="bg-white/90 shadow-xl rounded-2xl max-w-3xl mx-auto p-8 border border-[#e5ffe5]">
-          <h2 className="text-[#35732F] text-2xl md:text-3xl font-semibold mb-4 text-center">
-            Tentang MTS Riadhul Ulum
+      {/* Isi dengan card */}
+      <div className="px-4 md:px-[60px] pt-[10px] pb-16 flex flex-col items-center">
+        <article className="bg-[#f8fff8] shadow-md rounded-2xl max-w-3xl mx-auto p-8 border border-[#e5ffe5]">
+          <h2 className="text-[#1F581A] text-xl md:text-2xl font-bold mb-4 text-center tracking-wide">
+            Berita Terkini
           </h2>
-          <p className="text-gray-700 text-base md:text-lg leading-relaxed font-light mb-6 text-justify">
-            <span className="font-semibold text-[#1F581A]">
-              MTS Riadhul Ulum
-            </span>{" "}
-            merupakan sebuah Madrasah Tsanawiyah swasta yang berdiri di bawah
-            naungan{" "}
-            <span className="font-semibold">Yayasan Riadhul Ulum Ampenan</span>.
-            Sejak awal berdirinya, madrasah ini berkomitmen untuk memberikan
-            pendidikan dasar yang berkualitas, berlandaskan nilai-nilai
-            keislaman serta pengembangan karakter peserta didik.
-          </p>
-          <p className="text-gray-700 text-base md:text-lg leading-relaxed font-light mb-6 text-justify">
-            Dengan jumlah siswa di setiap kelas berkisar{" "}
-            <span className="font-semibold">15 orang</span>, MTS Riadhul Ulum
-            mampu memberikan perhatian dan pendampingan yang lebih intensif,
-            sehingga proses belajar mengajar berjalan lebih efektif dan
-            kondusif. Madrasah ini melayani jenjang pendidikan dari{" "}
-            <span className="font-semibold">kelas 7 hingga kelas 9</span>.
-          </p>
-          <p className="text-gray-700 text-base md:text-lg leading-relaxed font-light text-justify">
-            Tenaga pendidik di MTS Riadhul Ulum terdiri dari{" "}
-            <span className="font-semibold">11 orang guru</span> dan{" "}
-            <span className="font-semibold">1 tenaga kependidikan</span> yang
-            memiliki latar belakang pendidikan yang relevan serta kompetensi
-            yang mumpuni di bidangnya. Mereka adalah individu-individu terlatih,
-            berdedikasi, dan memiliki semangat tinggi dalam mencetak generasi
-            yang cerdas, berakhlak mulia, dan berdaya saing.
+          <p className="text-gray-800 text-base md:text-lg leading-relaxed font-light mb-6 text-justify">
+            <span className="font-semibold text-[#35732F]">Bank Mandiri</span>
+            menunjukkan kepeduliannya di bulan Ramadhan dengan menyalurkan{" "}
+            <span className="font-semibold">
+              bantuan untuk anak yatim dan kaum dhuafa
+            </span>
+            . Bantuan yang diberikan berupa paket sembako, santunan, serta
+            dukungan kegiatan kajian Ramadhan yang dilaksanakan di Mushola
+            Yayasan Riadhul Ulum.
+            <br />
+            <br />
+            Acara penyerahan bantuan ini disambut hangat oleh pihak yayasan dan
+            para penerima manfaat. Perwakilan Bank Mandiri menyampaikan bahwa
+            kegiatan ini merupakan bagian dari
+            <span className="font-semibold"> program sosial perusahaan </span>
+            untuk meringankan beban masyarakat yang membutuhkan, sekaligus
+            mempererat silaturahmi.
+            <br />
+            <br />
+            Melalui kegiatan ini, diharapkan dapat menumbuhkan rasa kepedulian,
+            memperkuat ukhuwah Islamiyah, serta memberikan semangat baru bagi
+            anak-anak yatim dan kaum dhuafa dalam menyambut bulan penuh berkah.
           </p>
         </article>
       </div>

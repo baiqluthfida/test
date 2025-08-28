@@ -28,7 +28,6 @@ export default function HomePage() {
           >
             <span className="text-[15px] font-bold flex items-center gap-1">
               Beranda
-              <i className="fa-solid fa-chevron-down text-[12px] mt-[2px]" />
             </span>
           </Link>
 
@@ -75,37 +74,26 @@ export default function HomePage() {
 
       <div className="p-[120px]">
         <div className="flex justify-center gap-[90px]">
-          <Link href="/komunitas" target="_blank" rel="noopener noreferrer">
-            <div className="">
-              <img src="/upacara.png" alt="akademik" width={251} height={191} />
-              <p className="text-[#35732F] font-bold text-[20px] font-sans pt-1 ">
-                Komunitas &gt;
-              </p>
-            </div>
-          </Link>
+          <div className="">
+            <img src="/upacara.png" alt="akademik" width={251} height={191} />
+            <p className="text-[#35732F] font-bold text-[20px] font-sans pt-1 text-center">
+              Foto Upacara Bendera
+            </p>
+          </div>
 
-          <Link href="/akademik" target="_blank" rel="noopener noreferrer">
-            <div className="">
-              <img src="/bangku.png" alt="akademik" width={251} height={191} />
-              <p className="text-[#35732F] font-bold text-[20px] font-sans pt-1">
-                Akademik &gt;
-              </p>
-            </div>
-          </Link>
+          <div className="">
+            <img src="/bangku.png" alt="akademik" width={251} height={191} />
+            <p className="text-[#35732F] font-bold text-[20px] font-sans pt-1 text-center">
+              Foto Kegiatan Belajar
+            </p>
+          </div>
 
-          <Link href="/tentangkami" target="_blank" rel="noopener noreferrer">
-            <div className="">
-              <img
-                src="/bagibagi.jpg"
-                alt="akademik"
-                width={251}
-                height={191}
-              />
-              <p className="text-[#35732F] font-bold text-[20px] font-sans pt-1">
-                Tentang Kami &gt;
-              </p>
-            </div>
-          </Link>
+          <div className="">
+            <img src="/bagibagi.jpg" alt="akademik" width={251} height={191} />
+            <p className="text-[#35732F] font-bold text-[20px] font-sans pt-1 text-center">
+              Foto Event Ramadhan
+            </p>
+          </div>
         </div>
       </div>
 
@@ -156,7 +144,7 @@ export default function HomePage() {
             Berita Terkini <br />
             Terkait Yayasan
           </h4>
-          <Link className="text-[#1F581A] text-[15px] mt-2" href="">
+          <Link className="text-[#1F581A] text-[15px] mt-2" href="/berita">
             selengkapnya &gt;
           </Link>
         </div>
@@ -186,7 +174,7 @@ export default function HomePage() {
             Acara Pengajian <br />
             Bulanan
           </h4>
-          <Link className="text-[#1F581A] text-[15px] mt-2" href="">
+          <Link className="text-[#1F581A] text-[15px] mt-2" href="/pengajian">
             selengkapnya &gt;
           </Link>
         </div>

@@ -66,7 +66,7 @@ export default function sejarah() {
       </section>
 
       {/* GAMBAR */}
-      <div className="flex justify-center -mt-12 mb-10 relative z-10">
+      <div className="flex justify-center -mt-12 mb-10 ">
         <div className="rounded-3xl shadow-2xl overflow-hidden border-4 border-[#1F581A]/20 max-w-4xl w-full">
           <img
             className="w-full h-[340px] md:h-[420px] object-cover object-center transition-transform duration-500 hover:scale-105"
@@ -77,24 +77,31 @@ export default function sejarah() {
       </div>
 
       {/* Majlis Ta'lim */}
-      <div className="mb-7">
-        <h3 className="text-[20px] text-[#35732F] font-bold mb-2">
-          Majlis Ta'lim
-        </h3>
-        <div className="text-[18px] text-[#35732F]">
-          Majlis Ta'lim Riadhul Ulum merupakan wadah pembelajaran agama Islam
-          bagi seluruh lapisan masyarakat.
-          <br />
-          <span className="font-semibold">Fokus program:</span>
-          <ul className="list-disc pl-6">
-            <li>Pembelajaran Al-Qur'an dan tajwid</li>
-            <li>Kajian kitab kuning dan tafsir Al-Qur'an</li>
-            <li>Pendidikan akhlak dan fiqih</li>
-            <li>Kegiatan pengajian dan peringatan hari besar Islam</li>
-          </ul>
-          Program ini bertujuan meningkatkan pemahaman agama, mempererat ukhuwah
-          Islamiyah, serta membentuk pribadi yang berilmu dan berakhlak mulia.
-        </div>
+      <div className="px-[20px] md:px-[60px] pt-[10px] pb-16 flex flex-col items-center">
+        <article className="bg-white/90 shadow-xl rounded-2xl max-w-3xl mx-auto p-8 border border-[#e5ffe5]">
+          <h2 className="text-[#35732F] text-2xl md:text-3xl font-semibold mb-4 text-center">
+            Majlis Ta'lim
+          </h2>
+          <p className="text-gray-700 text-base md:text-lg leading-relaxed font-light mb-6 text-justify">
+            <span className="font-semibold text-[#1F581A]">
+              Majlis Ta'lim Riadhul Ulum merupakan wadah pembelajaran agama
+              Islam bagi seluruh lapisan masyarakat.
+            </span>{" "}
+            <span className="font-semibold">Fokus program</span>.
+            <br />
+            - Pembelajaran Al-Qur'an dan tajwid
+            <br />
+            - Kajian kitab kuning dan tafsir Al-Qur'an
+            <br />
+            - Pendidikan akhlak dan fiqih
+            <br />
+            - Kegiatan pengajian dan peringatan hari besar Islam
+            <br />
+            Program ini bertujuan meningkatkan pemahaman agama, mempererat
+            ukhuwah Islamiyah, serta membentuk pribadi yang berilmu dan
+            berakhlak mulia.
+          </p>
+        </article>
       </div>
 
       {/* Footer (tidak diubah) */}
